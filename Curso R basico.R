@@ -13,7 +13,19 @@ list.files()
 file.rename()
 setwd()
 getwd()
-path <- file.path("Users","davemeteore", "Documentos", "GitHub", "R-basico", fsep="/")
+path <- file.path("MacBook Air de David","Macintosh HD", "Usuarios","davewave", "Documentos", "GitHub", "R-basico", fsep="/")
 setwd(path)
+setwd("Macintosh HD/Usuarios/davewave/Documentos/GitHub/R-basico")
 getwd()
 dir.create("materias/filosofia")
+materias <- c("historia", "geografia", "fisica", "artes")
+lenght(materias)
+length(materias)
+for (i in materias){
+  dir.create(i)
+}
+for (i in materias){
+  dir.create(file.path(i, "lecturas"), recursive = TRUE)
+}
+getwd()
+dir()
